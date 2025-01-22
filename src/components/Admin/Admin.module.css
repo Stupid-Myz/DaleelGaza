@@ -1,0 +1,110 @@
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.messages {
+  height: 50vh;
+  overflow-y: auto;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.messageAdmin {
+  align-self: flex-end; /* Admin messages on the right */
+  max-width: 60%;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #28a745; /* Green color for admin messages */
+  color: #fff;
+  border-radius: 10px 10px 0 10px;
+}
+
+.messageUser {
+  align-self: flex-start; /* User messages on the left */
+  max-width: 60%;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #007bff; /* Blue color for user messages */
+  color: #fff;
+  border-radius: 10px 10px 10px 0;
+}
+
+.timestamp {
+  font-size: 0.8em;
+  color: #ddd;
+  margin-top: 5px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 10px;
+  width: calc(100% - 100px);
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.InputButton {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styles for better spacing */
+.row {
+  margin: 0;
+}
+
+.col {
+  padding: 0;
+}
+
+/* Scrollbar styling for messages */
+.messages::-webkit-scrollbar {
+  width: 8px;
+}
+
+.messages::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+.messages::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+.messages::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
